@@ -12,7 +12,7 @@ int main() {
     scanf("%d", &alunos);
 
     for(i = 0; i < alunos; i++) {
-        scanf("%d %f", &chamada, &media);
+        scanf("%d - %f", &chamada, &media);
 
         if(media >= 7.0) {
             aprovados[aprove] = chamada;
@@ -36,15 +36,15 @@ int main() {
     }
 
     for(j = 0; j < aprove; j++) {
-        printf("Aprovados: %d (%d)\n", aprove, np);
+        printf("Aprovados: %d (%f)\n", aprovados[j], notap[j]);
     }
 
     for(k = 0; k < rere; k++) {
-        printf("Recuperação: %d (%d)\n", rere, nr);
+        printf("Recuperação: %d (%f)\n", recuperacao[j], notar[j]);
     }
 
     for(l = 0; l < reprove; l++) {
-        printf("Reprovados: %d (%d)\n", reprove, nf);
+        printf("Reprovados: %d (%f)\n", reprovados[j], notaf[j]);
     }
 
     return 0;
