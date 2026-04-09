@@ -5,8 +5,8 @@ int main() {
     float media;
     int aprovados[100] = {0}, recuperacao[100] = {0}, reprovados[100] = {0};
     int aprove = 0, rere = 0, reprove = 0;
-    float notap[100] = {0.0}, notar[100] = {0.0}, notaf[100] = {0.0};
-    float np = 0.0, nr = 0.0, nf = 0.0;
+    float notap[100] = {0}, notar[100] = {0}, notaf[100] = {0};
+    int np = 0, nr = 0, nf = 0;
     int i,j, k, l;
 
     scanf("%d", &alunos);
@@ -36,21 +36,15 @@ int main() {
     }
 
     for(j = 0; j < aprove; j++) {
-        scanf("%d %f", &aprovados[aprove], notap[np]);
-
-        printf("Aprovados: %d (%f)\n", aprove, np);
+        printf("Aprovados: %d (%d)\n", aprove, np);
     }
 
     for(k = 0; k < rere; k++) {
-        scanf("%d %f", &recuperacao[rere], notar[nr]);
-
-        printf("Recuperação: %d (%f)\n", rere, nr);
+        printf("Recuperação: %d (%d)\n", rere, nr);
     }
 
     for(l = 0; l < reprove; l++) {
-        scanf("%d %f", &reprovados[reprove], &notaf[nf]);
-
-        printf("Reprovados: %d (%f)\n", reprove, nf);
+        printf("Reprovados: %d (%d)\n", reprove, nf);
     }
 
     return 0;
