@@ -8,7 +8,7 @@ int main() {
     scanf("%d", &alunos);
 
     for(i = 0; i < alunos; i++) {
-        scanf("%d" - "%d", &chamada, &medias);
+        scanf("%d - %d", &chamada, &medias);
 
         if(medias >= 7) {
             aprovados[n] = chamada;
@@ -22,7 +22,7 @@ int main() {
         }
     }
 
-    printf("Aprovados: %d\nRecuperacao: %d\nReprovados: %d\n", aprovados[n], recuperacao[m], reprovados[o]);
+    printf("Aprovados: %d\nRecuperacao: %d\nReprovados: %d\n", n, m, o);
 
     return 0;
 }
