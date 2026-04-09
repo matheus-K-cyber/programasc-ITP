@@ -35,7 +35,7 @@ int main() {
         }
     }
 
-    printf("Aprovados: ");
+    printf("Aprovados:");
     for(j = 0; j < aprove; j++) {
         if(j < aprove - 1) {
             printf(" %d (%.1f),", aprovados[j], notap[j]);
@@ -44,7 +44,7 @@ int main() {
         }
     }
 
-    printf("Recuperação: ");
+    printf("Recuperação:");
     for(k = 0; k < rere; k++) {
         if(k < rere - 1) {
             printf(" %d (%.1f),", recuperacao[k], notar[k]);
@@ -53,7 +53,7 @@ int main() {
         }
     }
 
-    printf("Reprovados: ");
+    printf("Reprovados:");
     for(l = 0; l < reprove; l++) {
         if(l < reprove - 1) {
             printf(" %d (%.1f),", reprovados[l], notaf[l]);
