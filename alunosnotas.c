@@ -36,15 +36,15 @@ int main() {
     }
 
     for(j = 0; j < aprove; j++) {
-        printf("Aprovados: %d (%f)\n", aprovados[j], notap[j]);
+        printf("Aprovados: %d (%.2f)\n", aprovados[j], notap[j]);
     }
 
     for(k = 0; k < rere; k++) {
-        printf("Recuperação: %d (%f)\n", recuperacao[j], notar[j]);
+        printf("Recuperação: %d (%.2f)\n", recuperacao[k], notar[k]);
     }
 
     for(l = 0; l < reprove; l++) {
-        printf("Reprovados: %d (%f)\n", reprovados[j], notaf[j]);
+        printf("Reprovados: %d (%.2f)\n", reprovados[l], notaf[l]);
     }
 
     return 0;
