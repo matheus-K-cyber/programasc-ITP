@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 bool legalchato(int vetor[100], int n) {
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < n - 1; i++) {
         if( (vetor[i + 1] - vetor[i]) % 2 == 0) {
             return true;
         } else {
@@ -19,7 +19,7 @@ int main() {
 
     scanf("%d", &n);
 
-    for(i = 1; i < n; i++) {
+    for(i = 0; i < n; i++) {
         scanf("%d", &valor);
         vetor[numeros] = valor;
         numeros++;
