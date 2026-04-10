@@ -35,7 +35,7 @@ int main() {
 
     scanf("%d", &tam1);
 
-    for(int i = 0; i < tam1; i++) {
+    for(int i = 0; i < tam1 - 1; i++) {
         scanf("%d", &n1);
         v1[i] = n1;
         i++;
@@ -43,7 +43,7 @@ int main() {
 
     scanf("%d", &tam2);
 
-    for(int i = 0; i < tam2; i++) {
+    for(int i = 0; i < tam2 - 1; i++) {
         scanf("%d", &n2);
         v2[i] = n2;
         i++;
