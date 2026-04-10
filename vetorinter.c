@@ -38,6 +38,7 @@ int main() {
     for(int i = 0; i < tam1; i++) {
         scanf("%d", &n1);
         v1[i] = n1;
+        i++;
     }
 
     scanf("%d", &tam2);
@@ -45,6 +46,7 @@ int main() {
     for(int i = 0; i < tam2; i++) {
         scanf("%d", &n2);
         v2[i] = n2;
+        i++;
     }
 
     n3 = intercalar(v1, v2, v3, n1, n2);
