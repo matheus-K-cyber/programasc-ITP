@@ -31,7 +31,7 @@ int intercalar(int v1[], int v2[], int v3[], int n1, int n2) {
 
 int main() {
     int tam1, tam2, n1 = 0, n2 = 0, n3 = 0;
-    int v1[10], v2[10], v3[10];
+    int v1[10] = {0}, v2[10] = {0}, v3[10] = {0};
 
     scanf("%d", &tam1);
 
