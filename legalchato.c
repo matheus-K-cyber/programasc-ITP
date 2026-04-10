@@ -2,19 +2,17 @@
 #include <stdbool.h>
 
 bool legalchato(int vetor[100], int n) {
-    for(int i = 1; i < n - 1; i++) {
-        if( (vetor[i] - vetor[i - 1]) % 2 == 0) {
-            return true;
-        } else {
+    for(int i = 1; i < n; i++) {
+        if( (vetor[i] - vetor[i - 1]) % 2 != 0) {
             return false;
         }
     }
-
+    return true;
 }
 
 int main() {
     int vetor[100] = {0};
-    int n, valor, numeros;
+    int n, valor, numeros = 0;
     int i;
 
     scanf("%d", &n);
