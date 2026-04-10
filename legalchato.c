@@ -27,9 +27,9 @@ int main() {
     }
 
     if(legalchato(vetor, n)) {
-        printf("Legal");
+        printf("Legal\n");
     } else {
-        printf("Chato");
+        printf("Chato\n");
     }
 
     return 0;
