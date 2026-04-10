@@ -11,17 +11,17 @@ int intercalar(int v1[], int v2[], int v3[], int tam1, int tam2) {
         k++;
         j++;
     }
-
-    if(i < tam1) {
-        v3[k] = v1[i];
-        k++;
-        i++;
-    }
-
-    if(j < tam2) {
-        v3[k] = v2[j];
-        k++;
-        j++;
+    while(i < tam1 || j < tam2) {
+        if(i < tam1) {
+            v3[k] = v1[i];
+            k++;
+            i++;
+        }
+        if(j < tam2) {
+            v3[k] = v2[j];
+            k++;
+            j++;
+        }
     }
 
 return k;
