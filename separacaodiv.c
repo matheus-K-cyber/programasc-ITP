@@ -28,6 +28,23 @@ int main() {
 
     }
     
+    printf("Vetor B: ");
+    for(i = 0; i < j; i++) {
+        printf("%d ", vetorB[i]);
+    }
+    printf("\n");
+
+    printf("Vetor C: ");
+    for(i = 0; i < k; i++) {
+        printf("%d ", vetorC[i]);
+    }
+    printf("\n");
+
+    printf("Vetor D: ");
+    for(i = 0; i < l; i++) {
+        printf("%d ", vetorD[i]);
+    }
+    printf("\n");
 
     return 0;
 }
