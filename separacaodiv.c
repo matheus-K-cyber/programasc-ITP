@@ -30,7 +30,7 @@ int main() {
             }
         }
     
-    printf("Vetor B: [");
+    printf("B = [");
     for(i = 0; i < tamB; i++) {
         if(i < tamB - 1) {
             printf("%d, ", vetorB[i]);
@@ -40,7 +40,7 @@ int main() {
     }
     printf("]\n");
 
-    printf("Vetor C: [");
+    printf("C = [");
     for(i = 0; i < tamC; i++) {
         if(i < tamC - 1) {
             printf("%d, ", vetorC[i]);
@@ -50,7 +50,7 @@ int main() {
     }
     printf("]\n");
 
-    printf("Vetor D: [");
+    printf("D = [");
     for(i = 0; i < tamD; i++) {
         if(i < tamD - 1) {
             printf("%d, ", vetorD[i]);
