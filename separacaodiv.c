@@ -32,19 +32,31 @@ int main() {
     
     printf("Vetor B: [");
     for(i = 0; i < tamB; i++) {
-        printf("%d ", vetorB[i]);
+        if(i < tamB - 1) {
+            printf("%d, ", vetorB[i]);
+        } else {
+            printf("%d", vetorB[i]);
+        }
     }
     printf("]\n");
 
     printf("Vetor C: [");
     for(i = 0; i < tamC; i++) {
-        printf("%d ", vetorC[i]);
+        if(i < tamC - 1) {
+            printf("%d, ", vetorC[i]);
+        } else {
+            printf("%d", vetorC[i]);
+        }
     }
     printf("]\n");
 
     printf("Vetor D: [");
     for(i = 0; i < tamD; i++) {
-        printf("%d ", vetorD[i]);
+        if(i < tamD - 1) {
+            printf("%d, ", vetorD[i]);
+        } else {
+            printf("%d", vetorD[i]);
+        }
     }
     printf("]\n");
 
