@@ -2,13 +2,17 @@
 
 int main() {
     int vetorA[15] = {0}, vetorB[15] = {0}, vetorC[15] = {0}, vetorD[15] = {0};
-    int tamA, tamB, tamC, tamD;
-    int i;
+    int tamB = 0, tamC = 0, tamD = 0;
+    int i, n;
 
     for(i = 0; i < 15; i++) {
-        scanf("%d", &tamA);
-        vetorA[tamA] = i;
-        tamA++;
+        scanf("%d", &n);
+
+         if(n <= 0) {
+            break;
+         } else if(n > 0) {
+            vetorA[i] = n;
+         }
     }
 
     for(i = 0; i < 15; i++) {
