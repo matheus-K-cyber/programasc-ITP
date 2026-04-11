@@ -2,7 +2,7 @@
 
 int main() {
     int vetorA[15] = {0}, vetorB[15] = {0}, vetorC[15] = {0}, vetorD[15] = {0};
-    int tamA, tamB, tamC, tamD;
+    int tamA = 0, tamB = 0, tamC = 0, tamD = 0;
     int n, i;
 
     scanf("%d", &tamA);
