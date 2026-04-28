@@ -11,8 +11,10 @@ void email_scan(char email[], int *arroba, int *ponto) {
         if (email[i] == '@') {
             *arroba = i;
         } 
-        if (email[i] == '.' && *ponto == -1 && *arroba != -1) {
-            *ponto = i;
+        if (email[i] == '.' && *arroba != -1 && i > *arroba) {
+            if(*ponto == -1 || i < *ponto) {
+                *ponto = i;
+            }
         }
     }
 }
@@ -29,10 +31,10 @@ int main() {
 
             for (i = arroba + 1; i < ponto; i++) {
         printf("%c", email[i]);
-      }
-        printf("\n");
+    }
         }
-
+        printf("\n");
+        
     } while (strcmp(email, "FIM") != 0);
 
     return 0;
