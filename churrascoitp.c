@@ -10,7 +10,6 @@ typedef struct {
 
 float analisa(char itens[20], int flag, float total, int *participantes) {
     Churras dados;
-    int k = 101;
 
     while(flag == 1) {
         scanf(" %s %f %d", itens, &dados.preco, &dados.quantidade);
